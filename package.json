@@ -12,8 +12,5 @@
     "test": "mocha ./test"
   },
   "author": "",
-  "publishConfig": {
-    "registry": "$PUBLISH_REGISTRY"
-  },
   "license": "ISC"
 }
