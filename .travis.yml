@@ -3,7 +3,7 @@ node_js:
 - '5.1'
 #- '5'
 before_install:
-- bash env.sh
+- sh env.sh
 deploy:
   script: npm publish
 env:
