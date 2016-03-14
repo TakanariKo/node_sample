@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-  - "5"
-  - "5.1"
-
-
+- '5'
+- '5.1'
 after_success:
-  - "echo 'Success'"
+- env
+- echo 'Success'
+env:
+  global:
+    secure: VkktDCrYmb9ekKcM8+PiWey3m9XdnQv0aBbGMdq+VKw/JBhvqhDUTpqlTmGJupm+oHKfpsI4Fge+et5m7OW44ufNNmQS3suSEoK/t0h6rZCzJDMjxV6wYzQP3TOvBDrVk7H6VYphnFn2SlwpZmWi4qFrhb1Bec9hY7sPgRLk1BYDVy/c84UzruJgbcLSpxktnMzhjOwZf2JQ+qcJJwulK7tjoPQMQ+4ZVmxF3Gw0suaZ0zyGCYdYRTShtegVryF1g4s0Ct6S+u+UcUde+93+VwcZcF5RAqeV7umkwKgecOd4aCT8vaJ0a+jvEwf4aaPNnYemlcuwuLUhaiq3NnOfFVtmKURVaMZyspUpSD2wQZoIuIVAasImVUA+ecovk2VSACp3gKmAOyEayTwigOFKvhJ0gdjWQs7X32Yg3V3keN9lFzgO3rqD4ZknVI/OPNjrjRPySMKrlIUXYkGcwM7pwF4nW56z3WqF1q978Knp/BGOdHnOR+MPER7PCJby0aweJr/j41RTYnyumr17G04coKjRSKocFNU1zQeVN/Or/xankDeilJ34VQwUEJWGe71/LdfgmA/DpYDWfOWC7MIMweDQxNLOkv5O9LSt42LN6OSnXVCQBlyFdbAaiWgzwrBf5J0eBcdihhEO0N7WasEDh8nTVvseZW5sn0v0uVER8+I=
