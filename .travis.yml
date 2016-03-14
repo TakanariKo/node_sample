@@ -4,7 +4,8 @@ node_js:
 script:
 - npm test
 deploy:
-  provider: $PUBLISH_REGISTRY
+  script: npm publish --registry $PUBLISH_REGISTRY
+  provider: npm
   email: takou@zlab.co.jp
   api_key: $API_KEY
 
