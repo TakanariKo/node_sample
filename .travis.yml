@@ -9,6 +9,7 @@ script:
 - npm test
 deploy:
   script: npm publish --registry $PUBLISH_REGISTRY
+  skip_cleanup: true
   provider: script
   email: takou@zlab.co.jp
   api_key: $API_KEY
