@@ -13,7 +13,7 @@
   },
   "author": "",
   "publishConfig": {
-    "registry":$PUBLISH_REGISTRY
+    "registry": "$PUBLISH_REGISTRY"
   },
   "license": "ISC"
 
