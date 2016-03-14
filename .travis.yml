@@ -11,7 +11,7 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
-  api_key: $API_KEY
+#  api_key: $API_KEY
 env:
   global:
     secure: skiquIiw0XosBNqpbi/INcXfKd/oEL/a4kiwBdO0GcPwnu5pP7UKhGAQa9ZvC6ET2iC1gQz+usR5639VAunMmV7ODfWwd1sDT90J/hKEM4R1X+LQ4rf6tsM61eZuZ+wBuMQ8DKXhD1aliacUTsa/w5QzviXPvLHjh/iNaLawGrjPSESQemCNvqXsM+WXiQkmBGTG/tVgwkUJl+uD97uK4sg3P/p98FBPX2t6I1Zi1RlQlr1zB1hmpkqeB+5yGMFLpqSYHYe/A3LxW/bmI7WJkbMIdyzJJmft1SseWznkHgupX36/yro6i3MNjwQ0xqhovKN3P/LT3H6GT++qNIQZUTPGU/fhg6eujgb5+2+Qd6PW2lxaWjR5WTV5hGYys6oMuKz8pCY0ePkGelr7npzoAAXwx+bPrPwcy9vWvacL0F74RZdE02ISURgEHtzjba034T+vorZaSjD5C5y4rGxLOPtgZ5xl/OgPXpKadfLssop441VoKzJcbQx7BfCYdyObOF4rIcCM3PaFEGpyLyl0I5ym4ZudG7cLumNKdabebaJLvIlmOtDqqGkTHGEG4QZtBZufwO6CXrRGCu9ImSw5q1Y37rTArFfXpj9jNVvpZJH5n7CLXRzP7U7dU4CwP+1P2j+74p+V3CQZ7dKqjo93bmqpXxOWLDtGZld8t+dpz/o=
