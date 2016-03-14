@@ -1,8 +1,7 @@
 language: node_js
 node_js:
 - '5.1'
-before-install:
-- bash env.sh
+before_install: ./env.sh
 script:
 - npm test
 deploy:
