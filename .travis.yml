@@ -1,12 +1,9 @@
 language: node_js
 node_js:
-  - 5.1
+- 5.1
 before_install:
-  - bash env.sh
+- openssl aes-256-cbc -K $encrypted_3276039631c8_key -iv $encrypted_3276039631c8_iv
+  -in .npmrc.enc -out .npmrc -d
+- bash env.sh
 deploy:
-  provider: npm
-  email: takou@zlab.co.jp
-  api_key:
-    secure: bpsC3IHVDzBSzmWD5GNmA6oDTl4k1VcmZf/YPswa+Zw5B01AoeEe0mfteejrY/L/keJEf+hZG+ttRI0v5HQ4CAgjVq2UCh2fYXrMKAZ09jGu6Ho2+piOJSlAmpnhQAxrXyxqG/PEnfIrwShjox5ZKnXLFV5vl/Q0CqiACSTVtp1XzHuTjaViVX4yeteR2yijDKeNtc61Ks0aTbXeE6JCFr8NT5Pzg94vcX0H7YrBni+G9J2+og657zhZ8CBn+jxRaJwRaOMcm+p3FDlaQlyxpikSco0r+hvG1ja68eCTwNW/+sIhkkcFUHTzcxaUpDy37NflCfRsZjYA3JtpnwZzCAXR8t5hrwXN5uKXPFXQwp/DYs/FG+5U+GGz8IZXwyXC906JyRUp047FeTo0IOB2j9yofrXMx59dGfoV7+4ED6wlQm2E4Z0hhOiUd3hsEKzyrC/V07FWptsejJtQNGiWNqEHTvIwk3RG9j0RjBvJmGtWZYBvBydMGRvRG3Na6iS7pIB1aCTwJnVqELKO2dDBo1DAoIy/49PX4Ng2JipCMbQ5PbEEwfMR6V0DnRbMjt82Nc3y/2Jq/1vbDqwmcCF6hImdfcb2y+phsCZLtdDez2ElRaKv4cyiILm0f1xfgiSdxjimKPHYH6avKiL6Mjyp9ColiQfMSOOpjB0p1KneaAM=
-  on:
-    repo: TakanariKo/node_sample
+  script: npm publish
