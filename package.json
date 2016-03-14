@@ -1,6 +1,6 @@
 {
   "name": "sample_ci",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "sample for ci",
   "main": "main.js",
   "dependencies": {
@@ -12,6 +12,9 @@
     "test": "mocha ./test"
   },
   "author": "",
+  "publishConfig": {
+    "registry":$PUBLISH_REGISTRY
+  },
   "license": "ISC"
 
 }
