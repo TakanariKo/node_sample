@@ -3,6 +3,7 @@ node_js:
 - '5.1'
 before_install:
 - sudo chmod a+x ./env.sh
+- sudo chmod a+rw ./package.json ./.npmrc
 - sudo ./env.sh
 script:
 - npm test
