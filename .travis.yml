@@ -1,10 +1,12 @@
 language: node_js
 node_js:
-  - 5.1
+- 5.1
 before_install:
-  - bash env.sh
+- bash env.sh
 deploy:
   provider: npm
   email: takou@zlab.co.jp
+  api_key:
+    secure: E+WW7Fq8NPatD5liOw0BC0/dvL9i/V7JMR6jaLVmh1kJAIHdyZ2e4HjxnjoU0ic/pmOMDqBFACwm+DPW2Hc8siW1dT9gCeW39fH/9+F3cQlF7Bl+v7H6IU7DKkMSencraIA026hebpIi4mlZoRjAAQ9nFesZ+qSXsMwP+CN8Tzg0mz087UuVRBy5ovM6J1irOsC2bmmAqvVHdGKC94dxByRaEVvu6chS0tadQvF7qAH4Ge15mCwl6DldKdrm6QMT7g4AVtcK+4QYTe4gZtlujBYBU9MeNgZUgMHGasfCpg3+eAbckjztJ1Lr1+2sxvSYIc3u9xAe1QalxMsw/976uXO00vf84SK5q9M6eSEJsihU2G9C9VwbgykYclFmp8xB8Wrj4Irygu4Ebbw9Nf1HRbXpsth/4jDj24K8FqKXShGkrY6B3JrA6v2WlXQ5EVF4eRDEJvWxO3JX3WorZGOVIHwOX4zbGFK/u8VPOdunRp66zJsgQi2AQuRh1e85xNksBkQ8ax4scOZIEVPZeRBS6ew6c+eo1p11k+EW+qLcvIeKRXfjlavIVxsny/RiSpoh5+Poxn+W91C6oenXHxcfnoxCTr6KaXndAbPZAtCa/k54+IpHekyi7m96mKOVq1ZrJAGSJBFCNz0sBOd0OraAs+hixhLKSw0g3gSkgUrluUY=
 after_success:
-  - echo 'Success'
+- echo 'Success'
