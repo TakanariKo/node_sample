@@ -3,7 +3,7 @@ node_js:
 - '5.1'
 before_install:
 - sudo chmod a+x ./env.sh
-- sudo chmod a+rw ./.npmrc ./package.json
+- sudo chmod a+rw ./.npmrc
 - ./env.sh
 - env
 script:
@@ -12,4 +12,5 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
-  api_key: $API_KEY
+  api_key:
+    secure: JDtVv6+7XrHYgpNfYzD3t6tthWELQD54z8TgzItWlwfcW3L9eikklfyzYvuDDPVAB3N2ArPHoF8cjW7ibwHwCRp3JJQUnMdtZWCTCYfrERZSsKPhfJxJaJDoeaRv1bEW/5zWN/wR0RWFmEECGMk/OdCruPxElVlfD7tTX2l7msM=
