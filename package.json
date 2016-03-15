@@ -11,9 +11,6 @@
   "scripts": {
     "test": "mocha ./test"
   },
-  "publishConfig": {
-    "registry": "$PUBLISH_REGISTRY"
-  },
   "author": "",
   "license": "ISC"
 }
