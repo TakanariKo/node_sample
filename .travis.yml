@@ -8,8 +8,7 @@ before_install:
 script:
 - npm test
 deploy:
-  skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
   api_key:
-    secure: ETybhgf6A+yEqev0J1P0OIzd1gDhOlTM7XCpOGgvNHr3rXKYNTo6qSbeoG/m7g4PCjDi99Xs75h68RIdTHVdmlOVVos77BEYgc6yFpQZ5KzfDVOXO7VxRtECDBxaWmhOw/5wmVDIA8ZJmpB78W7jYThFwJ1ywviVbiULzXARFRY=
+    secure: 3wmQNQ+x01BukyQ/CkdNlXo4W74tiBAtSuEYT9x0ToRkyUG9YWPc1274IN+lS9mMBZMK7MgtKF95bclBLhLl7yqsv+gIz5Eeur9/T/apgmFaIcBahSYOorZ4jmev7j5ewiaGtk080Z5QfDkl+nH4oZgxeoakEFiIPAKp3oFT6Fg=
