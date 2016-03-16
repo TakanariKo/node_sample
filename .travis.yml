@@ -4,7 +4,6 @@ node_js:
 before_install:
 - npm config set registry=$REGISTRY
 - npm config set _auth=$API_KEY
-- npm config set always-auth=true
 - npm config set email=takou@zlab.co.jp
 - sudo cp ~/.npmrc .npmrc
 script:
