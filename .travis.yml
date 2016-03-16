@@ -2,9 +2,9 @@ language: node_js
 node_js:
 - '5.1'
 before_install:
-- npm config set registry $REGISTRY
-- npm config set _auth $API_KEY
-- npm config set email takou@zlab.co.jp
+- npm config set registry=$REGISTRY
+- npm config set _auth=$API_KEY
+- npm config set email=takou@zlab.co.jp
 - npm config ls -l
 script:
 - npm test
