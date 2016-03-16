@@ -6,6 +6,7 @@ before_install:
 - sudo chmod a+rw ./package.json
 - ./env.sh
 - npm config set registry=$REGISTRY
+- npm config set _auth=$API_KEY
 script:
 - npm test
 deploy:
