@@ -3,21 +3,14 @@ node_js:
 - '5.1'
 before_install:
 - npm config set registry=$REGISTRY
-script:
-- npm test
-
-before_deploy:
 - npm config set _auth=$API_KEY
 - npm config set always-auth=true
 - npm config set email=takou@zlab.co.jp
-
+- sudo cp ~/.npmrc .npmrc
+script:
+- npm test
 deploy:
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
   api_key:
-    secure: ETybhgf6A+yEqev0J1P0OIzd1gDhOlTM7XCpOGgvNHr3rXKYNTo6qSbeoG/m7g4PCjDi99Xs75h68RIdTHVdmlOVVos77BEYgc6yFpQZ5KzfDVOXO7VxRtECDBxaWmhOw/5wmVDIA8ZJmpB78W7jYThFwJ1ywviVbiULzXARFRY=
-
-after_deploy:
-- npm config ls -l
-- cat ~/.npmrc
