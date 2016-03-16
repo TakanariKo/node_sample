@@ -12,5 +12,4 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
-  api_key:
-    secure: 6nACN2r2IMNckEm/+fX3hkeTdk8uf1OeLNiTAAQz2FiVv0b2mmBF3ky/ULXiPAVjN8ED85AyKr30Mcej5d2E0IJTy86zNQm7AXbiXDcIKFBPv061cVxB7+la1suBumzxz9GsjCOnE2WYoqAKMbLlInyzsABFBNzBeypfsFgUwqg=
+  api_key: $API_KEY
