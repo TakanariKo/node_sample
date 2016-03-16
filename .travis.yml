@@ -8,6 +8,7 @@ before_install:
 script:
 - npm test
 deploy:
+  edge: true
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
