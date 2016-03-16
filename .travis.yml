@@ -2,10 +2,8 @@ language: node_js
 node_js:
 - '5.1'
 before_install:
-#- sudo chmod a+x ./env.sh
-#- sudo chmod a+rw ./.npmrc
-#- ./env.sh
 - npm config set registry=$REGISTRY
+- npm config set _auth=$API_KEY
 - npm config ls -l
 script:
 - npm test
@@ -13,5 +11,3 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
-  api_key:
-    secure: 3wmQNQ+x01BukyQ/CkdNlXo4W74tiBAtSuEYT9x0ToRkyUG9YWPc1274IN+lS9mMBZMK7MgtKF95bclBLhLl7yqsv+gIz5Eeur9/T/apgmFaIcBahSYOorZ4jmev7j5ewiaGtk080Z5QfDkl+nH4oZgxeoakEFiIPAKp3oFT6Fg=
