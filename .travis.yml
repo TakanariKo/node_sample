@@ -12,4 +12,4 @@ deploy:
   provider: npm
   email: takou@zlab.co.jp
   api_key:
-    secure: EXtOiLxBA5tABYys4nJIC4xLXvdufQ423ZNwDisNXjvFOth/svWbnbvSJrcikc+zC8+5w/ZLhm+ZyVWjCZfsIzfy9uxiyMXavscT/aANw6njQV7xxENdxhc2Ah0+HpYHGSA4p9uE8Ypljv20TzG/wM7NqpwyZsN/fvcAeXJwOxY=
+    secure: ETybhgf6A+yEqev0J1P0OIzd1gDhOlTM7XCpOGgvNHr3rXKYNTo6qSbeoG/m7g4PCjDi99Xs75h68RIdTHVdmlOVVos77BEYgc6yFpQZ5KzfDVOXO7VxRtECDBxaWmhOw/5wmVDIA8ZJmpB78W7jYThFwJ1ywviVbiULzXARFRY=
