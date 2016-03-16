@@ -2,13 +2,14 @@ language: node_js
 node_js:
 - '5.1'
 before_install:
-- sudo chmod a+x ./env.sh
-- sudo chmod a+rw ./.npmrc
-- ./env.sh
+#- sudo chmod a+x ./env.sh
+#- sudo chmod a+rw ./.npmrc
+#- ./env.sh
+- npm config set always-auth=true
+- npm config set registry=$REGISTRY
 script:
 - npm test
 deploy:
-  edge: true
   skip_cleanup: true
   provider: npm
   email: takou@zlab.co.jp
