@@ -12,3 +12,6 @@ deploy:
   provider: npm
   email: takou@zlab.co.jp
   api_key: $API_KEY
+env:
+  global:
+    secure: 3MSL92yGaI4OfxVqUhQ2B59HUV6s368/WAu+rhc6pYx7SO6YSOCrHr6tAGqXySBBQnixjIUA77nz/gGXR736AkuX9ZHHpakdsEGZq/VKB6wuu3oftFWTmz7rBrGN5TU7B3ur2IjJUAlmsOaL6Hbk9Co2B/S3c/kDorWkEzttkDU=
