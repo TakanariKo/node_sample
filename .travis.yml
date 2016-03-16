@@ -5,7 +5,6 @@ before_install:
 #- sudo chmod a+x ./env.sh
 #- sudo chmod a+rw ./.npmrc
 #- ./env.sh
-- npm config set always-auth=true
 - npm config set registry=$REGISTRY
 - npm config ls -l
 script:
