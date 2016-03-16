@@ -8,6 +8,8 @@ before_install:
 - sudo cp ~/.npmrc .npmrc
 script:
 - npm test
+before_deploy:
+- npm config set registry=$REGISTRY
 deploy:
   skip_cleanup: true
   provider: npm
