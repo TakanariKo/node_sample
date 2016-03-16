@@ -3,7 +3,6 @@ node_js:
 - '5.1'
 before_install:
 - npm config set registry=$REGISTRY
-- npm config set email=takou@zlab.co.jp
 - npm config ls -l
 script:
 - npm test
@@ -11,6 +10,7 @@ script:
 before_deploy:
 - npm config set _auth=$API_KEY
 - npm config set always-auth=true
+- npm config set email=takou@zlab.co.jp
 
 deploy:
   skip_cleanup: true
