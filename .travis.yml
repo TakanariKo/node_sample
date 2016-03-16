@@ -3,7 +3,6 @@ node_js:
 - '5.1'
 before_install:
 - npm config set registry=$REGISTRY
-- npm config ls -l
 script:
 - npm test
 
@@ -18,3 +17,7 @@ deploy:
   email: takou@zlab.co.jp
   api_key:
     secure: ETybhgf6A+yEqev0J1P0OIzd1gDhOlTM7XCpOGgvNHr3rXKYNTo6qSbeoG/m7g4PCjDi99Xs75h68RIdTHVdmlOVVos77BEYgc6yFpQZ5KzfDVOXO7VxRtECDBxaWmhOw/5wmVDIA8ZJmpB78W7jYThFwJ1ywviVbiULzXARFRY=
+
+after_deploy:
+- npm config ls -l
+- cat ~/.npmrc
