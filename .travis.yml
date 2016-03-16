@@ -2,14 +2,12 @@ language: node_js
 node_js:
 - '5.1'
 before_install:
+- sudo chmod a+x ./env.sh
+- sudo chmod a+rw ./package.json
+- ./env.sh
 - npm config set registry=$REGISTRY
-- npm config set _auth=$API_KEY
-- npm config set email=takou@zlab.co.jp
-- sudo cp ~/.npmrc .npmrc
 script:
 - npm test
-before_deploy:
-- npm config set registry=$REGISTRY
 deploy:
   skip_cleanup: true
   provider: npm
